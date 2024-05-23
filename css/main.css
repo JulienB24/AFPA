@@ -1,0 +1,56 @@
+body {
+  background-image: url(/Images/A3-1920.jpg);
+}
+@font-face {
+  font-family: gotham;
+  src: url(/Gotham-Light.otf);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+header > img {
+  width: 150px;
+}
+header > .navbar {
+  width: 100%;
+  font-size: 20px;
+}
+
+.container-fluid {
+  background-color: #44a33d;
+  color: black;
+}
+main > .card {
+  box-shadow: 20px 20px 50px #8662c0;
+}
+main > .card > .card-body {
+  background-color: rgba(128, 128, 128, 0.5);
+  opacity: 0.9;
+  text-align: center;
+  font-family: gotham;
+}
+main > .card > .card-body > h5 {
+  font-size: 50px;
+}
+main > .card > .card-body > p {
+  font-size: 17px;
+}
+
+main > .card > .card-body > .btn.btn-success {
+  background-color: #4e3291;
+  border: #3b39c5;
+  box-shadow: 15px 10px 30px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 576px) {
+  .card.m-auto {
+    width: 90% !important;
+  }
+  main > .card > .card-body > h5 {
+    font-size: 10px;
+  }
+}
